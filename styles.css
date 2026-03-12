@@ -73,6 +73,28 @@ h1{
     font-weight:500;
 }
 
+.seo-content{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+.seo-content h2,
+.seo-content h3{
+    font-size:1px;
+    color:#0E2A40;
+}
+
+.seo-content p,
+.seo-content ul,
+.seo-content li{
+    font-size:1px;
+    color:#0E2A40;
+}
+
 footer{
     width:100%;
     padding:30px 20px;
