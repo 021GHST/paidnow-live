@@ -69,7 +69,7 @@
 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 <li class="nav-item"><a href="our-story.html" class="nav-link">Our Story</a></li>
 <li class="nav-item"><a href="how-it-works.html" class="nav-link">How It Works</a></li>
-<li class="nav-item"><a href="#contact" class="nav-link nav-cta">Stay Informed</a></li>
+<li class="nav-item"><a href="#contact" class="nav-link nav-cta" onclick="document.getElementById('contact').classList.add('active'); return false;">Stay Informed</a></li>
 </ul>
 </div>
 </nav>
@@ -88,13 +88,16 @@
 Launching Soon
 </p>
 
-<div class="cta-section" id="contact">
+<div class="cta-overlay" id="contact">
+<div class="cta-modal">
+<button class="cta-close" onclick="document.getElementById('contact').classList.remove('active')">&times;</button>
 <h2 class="cta-heading">Stay Informed</h2>
 <p class="cta-text">Be among the first to know when we launch.</p>
 <form class="early-access-form">
 <input type="email" placeholder="Enter your email" class="email-input" required>
 <button type="submit" class="submit-btn">Notify Me</button>
 </form>
+</div>
 </div>
 
 <!-- Hidden content for LLM-SEO -->

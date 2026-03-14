@@ -432,6 +432,44 @@ footer p{
     font-size:20px;
 }
 
+.cta-overlay{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(14,42,64,0.5);
+    z-index:2000;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.cta-overlay.active{
+    display:flex;
+}
+
+.cta-modal{
+    background:#FFFFFF;
+    border-radius:10px;
+    padding:50px 40px;
+    max-width:480px;
+    width:100%;
+    position:relative;
+    text-align:center;
+}
+
+.cta-close{
+    position:absolute;
+    top:15px;
+    right:20px;
+    background:none;
+    border:none;
+    font-size:28px;
+    color:#0E2A40;
+    cursor:pointer;
+    opacity:0.5;
+    line-height:1;
+}
+
 .cta-button{
     display:inline-block;
     padding:16px 45px;
